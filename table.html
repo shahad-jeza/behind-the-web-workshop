@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <title>TABLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a26362a22a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------- nav bar --------------->
+    <section>
+        <nav>
+
+            <div id="box">
+                <ul id="bar">
+                    <li class="navbar">
+
+                        <a class="navbar a" href="HOME.HTML"><i class="material-icons">home</i>HOME</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="heading.html"><i class="material-icons">logout</i>BASICS</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="form.html"><i class="material-icons">description</i>FORM</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="table.html"><i class="material-icons">view_list</i>TABLE</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="div.html"><i class="material-icons">grid_view</i>DIV</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="LIST.HTML"><i class="material-icons">list</i>LISTS</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">
+                <img class="img" src="photo/GDSCTU-Logo.png" alt="logo" height="250" width="400">
+            </a>
+        </nav>
+    </section>
+    <hr>
+    <h2 class="text">HTML Tables</h2>
+    <h3 class="text">HTML tables allow web developers to arrange data into rows and columns.</h3><br>
+    <br>
+
+
+    <table id="table">
+        <caption class="text">Table Tags and Description</caption>
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> table </td>
+                <td>Defines a table</td>
+            </tr>
+            <tr>
+                <td>th</td>
+                <td>Defines a header cell in a table, By default, the text in "th" elements are bold and centered, but you can change that with CSS.</td>
+            </tr>
+            <tr>
+                <td>tr</td>
+                <td>Defines a row in a table, Each table row starts with a "tr" and ends with a /tr tag.</td>
+            </tr>
+            <tr>
+                <td>td</td>
+                <td>Defines a cell in a table, Everything between "td" and /td are the content of the table cell "Data"</td>
+            </tr>
+            <tr>
+                <td>caption</td>
+                <td>Defines a table caption,By default, a table caption will be center-aligned above a table.</td>
+            </tr>
+            <tr>
+                <td>colgroup</td>
+                <td>Specifies a group of one or more columns in a table for formatting, is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>thead</td>
+                <td>Groups the header content in a table</td>
+            </tr>
+            <tr>
+                <td>tbody</td>
+                <td>Groups the body content in a table</td>
+            </tr>
+            <tr>
+                <td>tfoot</td>
+                <td>Groups the footer content in a table</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br />
+    <br />
+    <hr>
+    <!---------------- footer  ------------>
+    <section style="height:250px; position:static ; bottom:0px; width:100% ">
+        <div class="footer">
+            <h4 class="text">Follow us</h4>
+            <ul class="footer-list">
+                <li><a class="fab fa-twitter" href="https://mobile.twitter.com/gdsctu"></a></li>
+                <li><a class="fab fa-linkedin" href="https://www.linkedin.com/company/gdsctu/?originalSubdomain=sa"></a></li>
+            </ul>
+        </div>
+        <h6 class="text" style="bottom:0;">All rights reserved to&copy;GDSC</h6>
+    </section>
+</body>

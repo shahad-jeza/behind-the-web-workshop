@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a26362a22a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------- nav bar --------------->
+    <section>
+        <nav>
+
+            <div id="box">
+                <ul id="bar">
+                    <li class="navbar">
+
+                        <a class="navbar a" href="HOME.HTML"><i class="material-icons">home</i>HOME</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="heading.html"><i class="material-icons">logout</i>BASICS</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="form.html"><i class="material-icons">description</i>FORM</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="table.html"><i class="material-icons">view_list</i>TABLE</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="div.html"><i class="material-icons">grid_view</i>DIV</a>
+                    </li>
+                    <li class="navbar">
+
+                        <a class="navbar a" href="LIST.HTML"><i class="material-icons">list</i>LISTS</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#">
+                <img class="img" src="photo/GDSCTU-Logo.png" alt="logo" height="250" width="400">
+            </a>
+        </nav>
+    </section>
+
+    <hr>
+    <h3 class="text">The "form" Element</h3>
+    <h4 class="text">
+        The user input is most often sent to a server for processing. <br />
+        The "form" element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons
+    </h4>
+    <hr />
+    <h3 class="text">The "input" Element</h3>
+    <p class="text">
+        The HTML "input" element is the most used form element.
+        <br />
+        An "input" element can be displayed in many ways, depending on the type attribute.
+        <br />
+        Here are some examples:
+    </p>
+
+    <h4 class="text"> input type="text"	----  Displays a single-line text input field</h4>
+    <h4 class="text"> input type="radio" ----  Displays a radio button (for selecting one of many choices)</h4>
+    <h4 class="text"> input type="checkbox" ---- Displays a checkbox (for selecting zero or more of many choices)</h4>
+    <h4 class="text"> input type="submit" ----	Displays a submit button (for submitting the form)</h4>
+    <h4 class="text"> input type="button" ----	Displays a clickable button</h4>
+
+    <h2 class="text" style="color: #F28482;">Let's create a form</h2>
+
+    <form>
+        <fieldset>
+            <legend class="text">cc</legend>
+            <label for="Uname">UserName :</label><br>
+            <input  type="text" id="Uname" name="Uname"><br>
+            <label for="PASS">PASSWORD :</label><br>
+            <input type="password" id="PASS" name="PASS"><br>
+            <label  for="Mail">Email:</label><br>
+            <input  type="email" id="Mail" name="Mail"><br>
+            <p style=" font-family: 'Open Sans', sans-serif; color: #495057;">Select your gender : </p>
+            <input style="width: 20px;" type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label><br>
+            <input style="width: 20px;" type="radio" id="female" name="sex" value="female">
+            <label for="female">female</label><br>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input style="width:200px;" type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+            <p style=" font-family: 'Open Sans', sans-serif; color: #495057;">Where are you from : </p>
+            <label for="city">Choose a city:</label>
+            <select style="width:200px;" id="city" name="city">
+                <option value="Medina">Medina</option>
+                <option value="Mecca">Mecca</option>
+                <option value="Jeddah">Jeddah</option>
+                <option value="Riyadh">Riyadh</option>
+            </select><br>
+            <br />
+            <p style=" font-family: 'Open Sans', sans-serif; color: #495057;">talk about yourself :</p>
+            <textarea style="width:100%;" name="message" rows="10" cols="30">
+            </textarea>
+            <P style=" font-family: 'Open Sans', sans-serif; color: #495057;">Choose the colors you like :</P>
+            <input style="width:20px;"  type="checkbox" id="color1" name="color1" value="RED">
+            <label for="color1"> RED</label><br>
+            <input style="width:20px;"  type="checkbox" id="color2" name="color2" value="GREEN">
+            <label for="color2"> GREEN</label><br>
+            <input style="width:20px;"  type="checkbox" id="color3" name="color3" value="BLUE">
+            <label for="color3"> BLUE</label><br>
+            <br>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <br>
+            <br>
+            <label for="myfile">Import your CV :</label>:</label>
+            <input type="file" id="myfile" name="myfile"><br>
+            <br>
+            <input id="button1" type="submit" value="Submit">  <input id="button2" type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <br />
+    <br />
+    <hr>
+    <!---------------- footer  ------------>
+    <section style="height:250px; position:static ; bottom:0px; width:100% ">
+        <div class="footer">
+            <h4 class="text">Follow us</h4>
+            <ul class="footer-list">
+                <li><a class="fab fa-twitter" href="https://mobile.twitter.com/gdsctu"></a></li>
+                <li><a class="fab fa-linkedin" href="https://www.linkedin.com/company/gdsctu/?originalSubdomain=sa"></a></li>
+            </ul>
+        </div>
+        <h6 class="text" style="bottom:0;">All rights reserved to&copy;GDSC</h6>
+    </section>
+</body>
